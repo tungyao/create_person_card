@@ -1,7 +1,7 @@
 import random
 
 
-def create(true_card_area="500224",true_card_birthday="19971030", true_card_order="666"):
+def create(true_card_area="500224",true_card_birthday="19970606", true_card_order="666"):
     true_card_auth = 0
     dirt = {"0": "1", "1": "0", "2": "X", "3": "9", "4": "8", "5": "7", "6": "6", "7": "5", "8": "4", "9": "3",
             "10": "2"}
