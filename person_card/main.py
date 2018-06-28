@@ -8,10 +8,7 @@ def create(true_card_area="500224",true_card_birthday="19970606", true_card_orde
     auth_code = [7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2]
     now_17 = str(true_card_area + true_card_birthday + true_card_order)
     S = now_17
-    R = []
-    for i in now_17:
-        R.append(int(i))
-    now_17 = R
+    now_17 = [int(i) for i in now_17]
     for i in range(len(auth_code)):
         r = auth_code[i] * now_17[i]
         true_card_auth += r
