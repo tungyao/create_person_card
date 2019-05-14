@@ -12,9 +12,10 @@ def create(true_card_area="500224",true_card_birthday="19970606", true_card_orde
     for i in range(len(auth_code)):
         r = auth_code[i] * now_17[i]
         true_card_auth += r
+    print(true_card_auth)
     true_card_auth = dirt.get(str(true_card_auth % 11))
     TRUE = S + true_card_auth
-    print(TRUE)
+    # print(TRUE)
     return TRUE
 R = []
 for i in range(30):
