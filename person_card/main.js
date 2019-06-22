@@ -21,8 +21,9 @@ function create(true_card_area="500224",true_card_birthday="19970606",true_card_
 }
 function Go(args){
     const R= [];
-    for(let i=0;i<args.n;i++){
-        let r =parseInt(Math.random()*999)+"";
+    for(let i=0;i<1000;i++){
+        // let r =parseInt(Math.random()*999)+"";
+        let r =i+"";
         if(r.length===2){
              r= "0"+r
         }else if(r.length===1){
@@ -32,7 +33,9 @@ function Go(args){
         create(args.area,args.birthday,r)
        ) 
     }
-    console.log(R);
+    R.map((item,index)=>{
+        console.log(item);
+    });
 }
 
 /*
@@ -45,7 +48,7 @@ function Go(args){
 Go({
     area:"500224",
     birthday:"19970606",
-    n:100
+    n:1000
 });
 
 
